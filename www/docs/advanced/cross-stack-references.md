@@ -59,6 +59,8 @@ export class StackB extends Stack {
 }
 ```
 
+For an example of how to do this in typescript: https://docs.serverless-stack.com/constructs/Api#sharing-an-api-across-stacks
+
 Behind the scenes, the table name is exported as an output of `StackA`. If you head over to your AWS CloudFormation console and look at `StackA`'s outputs, you should see an output with:
 
 - The key prefixed with `ExportsOutput`. Something like `ExportsOutputRefMyTableCD79AAA0A1504A18`.
